@@ -18,8 +18,8 @@ const fetchData = async () => {
 
 const banderillas = data => {
     let elementos = '';
-
-    data.forEach(item => {
+    //data.foreach( item => {
+    data.some( (item, index) => { //Se utiliza Some porque forEach no se puede cortar el ciclo
         elementos += `
         <article class="card">
 			<img src="${item.flag}" alt="" class="img-fluid">
@@ -43,6 +43,7 @@ const banderillas = data => {
 			</div>
 		</article>
         `
+        return index === 15;
     });
     
     banderas.innerHTML = elementos;
