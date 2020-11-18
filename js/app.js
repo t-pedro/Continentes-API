@@ -43,7 +43,7 @@ const banderillas = data => {
 			</div>
 		</article>
         `
-        return index === 15;
+        //return index === 15;
     });
     
     banderas.innerHTML = elementos;
