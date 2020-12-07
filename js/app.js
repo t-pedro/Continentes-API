@@ -16,6 +16,8 @@ const fetchData = async () => {
     }
 }
 
+//Ciclo forEach
+
 // const banderillas = data => {
 //     let elementos = '';
 //     //data.foreach( item => {
